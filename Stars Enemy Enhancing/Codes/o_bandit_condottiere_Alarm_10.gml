@@ -1,0 +1,15 @@
+event_inherited()
+if roomEntityIsLoaded
+    return;
+scr_locationRoomEntityInitDataSet("dynamic", roomEntityTag, roomEntityPresetTag)
+scr_enemy_create((x + 26), y, choose(o_bandit_torturer, o_bandit_bonebreaker_mace, o_bandit_bonebreaker_axe, o_bandit_warlock))
+scr_enemy_create((x - 26), y, choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create(x, (y + 26), choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create((x - 26), (y - 26), choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create((x - 26), (y + 26), choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create((x + 26), (y - 26), choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create((x + 26), (y + 26), choose(o_bandit_dog_elite, o_bandit_electromancer, o_bandit_geomancer, o_bandit_magehunter, o_bandit_slinger_heavy_mace, o_bandit_slinger_heavy_axe, o_bandit_marksman, o_bandit_banneret, o_bandit_magistrate_deserter_2hmace, o_bandit_magistrate_deserter_2haxe, o_bandit_magistrate_deserter_halberd, o_bandit_deserter_2hflail, o_bandit_deserter_flail, o_bandit_deserter_axe, o_bandit_deserter_sword))
+scr_enemy_create((x + 13), y, o_bandit_marksman)
+scr_enemy_create((x - 13), y, o_bandit_electromancer)
+scr_enemy_create(x, (y - 13), o_bandit_geomancer)
+scr_locationRoomEntityInitDataResetPrevious()

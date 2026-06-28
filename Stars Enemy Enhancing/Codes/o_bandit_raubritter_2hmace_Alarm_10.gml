@@ -1,0 +1,16 @@
+event_inherited()
+if roomEntityIsLoaded
+    return;
+scr_locationRoomEntityInitDataSet("dynamic", roomEntityTag, roomEntityPresetTag)
+scr_enemy_create((x + 26), y, choose(o_bandit_condottiere, o_bandit_paymaster, o_bandit_huntmaster))
+scr_enemy_create((x - 26), y, choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create(x, (y + 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create(x, (y - 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create((x - 26), (y - 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create((x - 26), (y + 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create((x + 26), (y - 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create((x + 26), (y + 26), choose(o_bandit_ringleader_sword, o_bandit_ringleader_axe, o_bandit_renegade_2haxe, o_bandit_renegade_2hsword, o_bandit_renegade_2hmace, o_bandit_renegade_halberd, o_bandit_renegade_2hflail, o_bandit_duelist))
+scr_enemy_create((x + 13), y, o_bandit_pyromancer)
+scr_enemy_create((x - 13), y, o_bandit_electromancer)
+scr_enemy_create(x, (y - 13), o_bandit_geomancer)
+scr_locationRoomEntityInitDataResetPrevious()

@@ -1,0 +1,13 @@
+event_inherited()
+if roomEntityIsLoaded
+    return;
+scr_locationRoomEntityInitDataSet("dynamic", roomEntityTag, roomEntityPresetTag)
+scr_enemy_create((x + 26), y, choose(o_armored_husk, o_ritualist, o_undertaker))
+scr_enemy_create((x - 26), y, choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create(x, (y - 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create(x, (y + 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create((x + 26), (y - 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create((x - 26), (y - 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create((x + 26), (y + 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_enemy_create((x - 26), (y + 26), choose(o_ghost_seer, o_ghost_templar, o_zombie2HAxeDecayedSoldier, o_zombie2HMaceDecayedSoldier, o_zombieHalberdDecayedSoldier, o_ghast_accursed, o_skeleton_highpriest, o_skeleton_crossbowman, o_skeleton_halberdier, o_skeleton_armorbreaker, o_skeleton_warrior, o_skeleton_soldier))
+scr_locationRoomEntityInitDataResetPrevious()

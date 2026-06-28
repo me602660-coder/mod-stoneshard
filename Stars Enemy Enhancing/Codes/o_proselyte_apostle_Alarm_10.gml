@@ -1,0 +1,16 @@
+event_inherited()
+if roomEntityIsLoaded
+    return;
+scr_locationRoomEntityInitDataSet("dynamic", roomEntityTag, roomEntityPresetTag)
+scr_enemy_create((x + 26), y, choose(o_proselyte_wormbearer, o_proselyte_juggernaut, o_proselyte_anmarrak))
+scr_enemy_create((x - 26), y, choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create(x, (y + 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create(x, (y - 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create((x - 26), (y - 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create((x - 26), (y + 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create((x + 26), (y - 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create((x + 26), (y + 26), choose(o_proselyte_yagram, o_proselyte_anointed, o_proselyte_templar_mace, o_proselyte_templar_sword, o_proselyte_bloodhunter, o_proselyte_cherub_axe, o_proselyte_cherub_spear))
+scr_enemy_create((x + 13), y, o_proselyte_anointed)
+scr_enemy_create((x - 13), y, o_proselyte_yagram)
+scr_enemy_create(x, (y - 13), o_proselyte_bloodhunter)
+scr_locationRoomEntityInitDataResetPrevious()

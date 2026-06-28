@@ -1,0 +1,15 @@
+event_inherited()
+if roomEntityIsLoaded
+    return;
+scr_locationRoomEntityInitDataSet("dynamic", roomEntityTag, roomEntityPresetTag)
+scr_enemy_create((x + 26), y, choose(o_proselyte_begotten, o_proselyte_admonisher, o_proselyte_brander))
+scr_enemy_create((x - 26), y, choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create(x, (y + 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create(x, (y - 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create((x - 26), (y - 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create((x - 26), (y + 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create((x + 26), (y - 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create((x + 26), (y + 26), choose(o_proselyte_ecclesiarch, o_proselyte_chainbound, o_proselyte_murkstalker, o_proselyte_impaler, o_proselyte_saggul, o_proselyte_girrud, o_proselyte_fiend_2haxe, o_proselyte_fiend_2hmace))
+scr_enemy_create((x + 13), y, o_proselyte_ecclesiarch)
+scr_enemy_create((x - 13), y, o_proselyte_murkstalker)
+scr_locationRoomEntityInitDataResetPrevious()
